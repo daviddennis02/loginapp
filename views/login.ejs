@@ -1,6 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %> </title>
+</head>
+
+<body>
 <h1>Login</h1>
 <% if (messages.error) { %>
-    <%= messages.error %> 
+  <h4 style="color: red; font-weight: lighter;"> <%= messages.error %> </h4>
 <% } %>
 <form action="/login" method="POST">
     <div>
@@ -15,3 +25,6 @@
     <button type="submit">Login</button>
 </form>
 <p>I have no account? <a href="/register">Register</a></p>
+</body>
+
+</html>
