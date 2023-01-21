@@ -36,9 +36,9 @@ app.use('/', indexRouter);
 app.use('/', loginRouter);
 app.use('/', registerRouter);
 
+// changed port from 3000 to 3001
 
-
-const PORT =process.env.PORT || 3000
+const PORT =process.env.PORT || 3001
 app.listen(PORT, function () {
     console.log(`Server is running on Port ${PORT}. Press CTRL + C to stop server!`)
 })
