@@ -1,7 +1,9 @@
 if (process.env.NODE_ENV !== 'production') {
     require('dotenv').config()
 }
-const path = require('path');
+const path = require('path'); // duplicating this line
+const path = require('path'); // duplicating this line
+const path = require('path'); // duplicating this line
 const express = require('express');
 const app = express()
 const passport = require('passport');
